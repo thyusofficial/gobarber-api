@@ -8,7 +8,7 @@
 
 ## 💻 About the project
 
-This api provides the possibility of create and manage appointments between barbers and customers
+This api provides the possibility of create and manage appointments between barbers and customers.
 
 Customers can choose the best time available to them and create an appointment.
 
@@ -34,7 +34,7 @@ Some technologies that was used to develop this api
 
 ## 💻 Getting started
 
-Download [Insomnia](https://insomnia.rest) and import the [routes](./github/Insomnia.json)
+Download [Insomnia](https://insomnia.rest) and the <a href="https://github.com/thyusofficial/gobarber-api/blob/master/.github/Insomnia.json">routes</a>. Then import into Insomnia to use.
 
 ### Requirements
 
