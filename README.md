@@ -42,10 +42,10 @@ Download [Insomnia](https://insomnia.rest) and the <a href="https://github.com/t
 - [Yarn](https://classic.yarnpkg.com/) / [npm](https://www.npmjs.com/)
 - [PostgreSQL](https://www.postgresql.org/) (this project used Docker)
 
-**Clone access the project folder**
+**Clone then access the project folder**
 
 ```bash
-$ git clone https://github.com/thyusofficial/gobarber-api && cd gobarber-api
+$ git clone https://github.com/thyusofficial/gobarber-api.git && cd gobarber-api
 ```
 
 **Follow the steps below**
@@ -54,18 +54,18 @@ $ git clone https://github.com/thyusofficial/gobarber-api && cd gobarber-api
 # Install all the dependencies
 $ yarn
 
-# Set with your environment variables with a copy of '.env.example' named '.env'.
+# Copy file '.env.example' then set your enviroment variables.
 $ cp .env.example .env
 
-# Create the instance of postgreSQL using docker
+# Create the instance of postgreSQL with docker
 $ docker run --name gobarber-postgres -e POSTGRES_USER=docker \
               -e POSTGRES_DB=gobarber -e POSTGRES_PASSWORD=docker \
               -p 5432:5432 -d postgres
 
-# Create the instance of mongoDB using docker
+# Create the instance of mongoDB with docker
 $ docker run --name gobarber-mongodb -p 27017:27017 -d -t mongo
 
-# Create the instance of redis using docker
+# Create the instance of redis with docker
 $ docker run --name gobarber-redis -p 6379:6379 -d -t redis:alpine
 
 # Run the migrations
